@@ -13,6 +13,11 @@ export default function Index({ posts, globalData }) {
     <Layout>
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <Header name={globalData.name} />
+  <nav className="text-center mb-8">
+  <Link href="/about" className="underline opacity-60 hover:opacity-100">
+    About Me
+  </Link>
+</nav>
       <main className="w-full">
         <h1 className="mb-12 text-3xl text-center lg:text-5xl">
           {globalData.blogTitle}
